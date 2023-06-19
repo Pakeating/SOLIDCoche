@@ -3,7 +3,7 @@ package com.prog.cochesolid;
 /*
 Esta clase extiende la funcionalidad de Coche siguiendo el principio de Abierto-Cerrado
 */
-public class CocheMovimiento extends Coche {
+public class CocheMovimiento extends Coche implements CocheMovimientoInterface {
 
     
     protected int velocidad;
@@ -12,9 +12,11 @@ public class CocheMovimiento extends Coche {
         super();
         velocidad=0;
     }
+    @Override
     public void acelerar(int acelerando){
         velocidad +=acelerando;
     }
+    @Override
     public void frenar(int frenando){
         velocidad-=frenando;
     }

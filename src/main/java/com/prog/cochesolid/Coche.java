@@ -6,7 +6,7 @@ package com.prog.cochesolid;
  * Aplicando el Principio de Responsabilidad Unica, esta clase solo puede hacer lo relacionado al coche. 
  * No podría por ejemplo, escribir los datos de los propietarios en una base de datos.
  */
-public class Coche {
+public class Coche implements CocheInterface {
     protected String modelo;
     protected int numeroRuedas;
     protected String motor;
@@ -18,9 +18,16 @@ public class Coche {
     public Coche(){
         arrancado=false;
     }
+    @Override
+    public String toString(){
+        return modelo+" con motor: "+motor;
+    }
+    
+    @Override
     public void arrancar(){
         arrancado=true;
     }
+    @Override
     public void parar(){
         arrancado=false;
     }
