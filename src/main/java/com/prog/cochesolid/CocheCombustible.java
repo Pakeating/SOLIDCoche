@@ -2,8 +2,9 @@
 package com.prog.cochesolid;
 
 /**
- *
  * @author PAKEATING
+ * Esta clase es una clase hija de CocheMovimiento en lugar de Coche para que incorpore las funciones añadidas por esta ultima.
+ * Creada para ver el principio de sustitucion de Liskov
  */
 public class CocheCombustible extends CocheMovimiento {
    
