@@ -7,13 +7,13 @@ package com.prog.cochesolid;
  * No podría por ejemplo, escribir los datos de los propietarios en una base de datos.
  */
 public class Coche {
-    private String modelo;
-    private int numeroRuedas;
-    private String motor;
-    private int numeroPuertas;
-    private int peso;
-    private boolean arrancado;
-    private int autonomía;
+    protected String modelo;
+    protected int numeroRuedas;
+    protected String motor;
+    protected int numeroPuertas;
+    protected int peso;
+    protected boolean arrancado;
+    protected int autonomía;
 
     public Coche(){
         arrancado=false;

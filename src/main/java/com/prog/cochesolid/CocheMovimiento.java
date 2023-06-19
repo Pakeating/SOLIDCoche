@@ -6,7 +6,7 @@ Esta clase extiende la funcionalidad de Coche siguiendo el principio de Abierto-
 public class CocheMovimiento extends Coche {
 
     
-    private int velocidad;
+    protected int velocidad;
     
     public CocheMovimiento(){
         super();
